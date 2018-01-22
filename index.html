@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chess clock inspired Pomodoro timer</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+</head>
+<body>
+    
+<!-- Chess clock inspired Pomodoro timer 
+by Andrew Creech 2017 -->
+
+    <audio id="bell-sound" src="http://www.inkspilldesign.com/demo/bell.mp3" type="audio/mpeg"></audio>
+    <audio id="toggle-sound" src="http://www.inkspilldesign.com/demo/toggle.mp3" type="audio/mpeg"></audio>	
+
+    <div class="switches">
+        <div id="work-switch"></div>
+        <div id="break-switch" class="switch-down"></div>
+    </div>
+
+    <div class="clock">
+        
+            <h1>Pomodoro</h1>
+            <hr />
+
+            <div class="timers">
+            
+            <div class="work">
+                <h2>WORK</h2>
+                <div class="display">
+                    <span id="work-time">00:00</span>
+                </div>
+                <div class="work-settings">
+                    <button id="work-decrement">-</button>
+                    <div class="work-settings-display">
+                        <span id="set-work-time"></span>
+                    </div>
+                    <button id="work-increment">+</button>
+                </div>
+            </div>
+
+            <div class="break">
+                <h2>BREAK</h2>
+                <div class="display">
+                    <span id="break-time">00:00</span>
+                </div>
+                <div class="break-settings">
+                    <button id="break-decrement">-</button>
+                    <div class="break-settings-display">
+                        <span id="set-break-time"></span>
+                    </div>
+                    <button id="break-increment">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clock-base"></div>
+    <div class="clock-base"></div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
